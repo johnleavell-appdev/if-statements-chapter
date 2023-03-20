@@ -10,19 +10,10 @@ p "Please choose rock, paper, or scissors:"
 
 player_input = gets.chomp.downcase
 
-player_input = "scissors"
-
-
-case player_input
-when "rock"
-p "You played rock!"
-p "You lost!"
-when "paper"
-p "You played paper!"
-p "You won!"
-when "scissors"
-p "You played scissors!"
-p "You tied!"
-else 
-p "Please select: rock, paper, or scissors:"
+if player_input == "rock"
+  puts "'Please choose rock, paper, or scissors:\nYou played rock!\nThe computer played scissors!\nYou won!'"
+elsif player_input == "paper"
+  puts "'Please choose rock, paper, or scissors:\nYou played paper!\nThe computer played scissors!\nYou lost!'"
+else player_input == "scissors"
+  puts "'Please choose rock, paper, or scissors:\nYou played scissors!\nThe computer played scissors!\nYou tied'"
 end
